@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Urbanist", sans-serif;
+            background-color: rgb(18, 17, 19);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 4rem;
+        }
+
+        .plans {
+            flex: 1;
+            max-width: 500px;
+            min-width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+        }
+
+        .title {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding-bottom: 10px; 
+            letter-spacing: 0.07em;
+            background-color: rgb(18, 17, 19);
+            border-radius: 15px;
+            color: white;
+            padding-top: 6px;
+        }
+
+        span {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: 35px;
+            margin-top: 25px;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 35px;
+            padding-left: 16px;
+            line-height: 1.8;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .plan-features li {
+            margin-bottom: 20px;
+        }
+
+        button {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            background: rgb(18, 17, 19);
+            border: 2px solid rgb(18, 17, 19);
+            border-radius: 5px;
+            letter-spacing: 0.05em;
+            margin-top: 30px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color:rgba(54, 54, 54, 0.188);
+            color: black;
+            font-weight: bold;
+        }
+
+        @media (max-width: 1250px) {
+            .container {
+                flex-direction: column;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="plans">
+            <div class="title">Basic</div>
+            <div class="price"><span>$5.99</span>/month</div>
+            <ul class="features">
+                <li>1 Screen</li>
+                <li>Monthly loot box</li>
+                <li>A firm handshake</li>
+            </ul>
+            <button class="button">Sign Up</button>
+        </div>
+        <div class="plans">
+            <div class="title">Standard</div>
+            <div class="price"><span>$7.99</span>/month</div>
+            <ul class="features">
+                <li>2 Screens</li>
+                <li>Map to a hidden treasure</li>
+                <li>A tender kiss</li>
+            </ul>
+            <button class="button">Sign Up</button>
+        </div>
+        <div class="plans">
+            <div class="title">Premium</div>
+            <div class="price"><span>$10.99</span>/month</div>
+            <ul class="features">
+                <li>Unlimited Screen</li>
+                <li>Relive a nostalgic memory</li>
+                <li>Find true love</li>
+            </ul>
+            <button class="button">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
